@@ -58,7 +58,7 @@ public class MusicDb {
 
 			artist = artist + " ";
 		}
-		while (albumName.length() <= size+5) {
+		while (albumName.length() <= size + 5) {
 
 			albumName = albumName + " ";
 		}
@@ -67,11 +67,10 @@ public class MusicDb {
 			type = type + " ";
 		}
 
-		return "|" + id + "|" + title + "|" + artist + "|" + albumName + "|" + type + "|"
-				;
+		return "|" + id + "|" + title + "|" + artist + "|" + albumName + "|" + type + "|";
 	}
 
-	public MusicDb( int id,String title, String artist, String albumName,String type) {
+	public MusicDb(int id, String title, String artist, String albumName, String type) {
 		super();
 		this.title = title;
 		this.artist = artist;

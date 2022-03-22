@@ -7,7 +7,6 @@ import java.util.Scanner;
 //import com.te.learn.Assessment.musicplayer.MusicDb;
 
 public class User {
-	
 
 	public void test() {
 		boolean exit = true;
@@ -28,8 +27,8 @@ public class User {
 			switch (ch) {
 			case 1:
 				System.out.println("1. Press 1 to 'Play by order'" + "\n2. Press 2 to 'Search a Song and play' "
-					+ "\n3. Press 3 to 'play random'");
-				int key1=s.nextInt();
+						+ "\n3. Press 3 to 'play random'");
+				int key1 = s.nextInt();
 				switch (key1) {
 				case 1:
 					RandomPlay.playInOrder(db);
@@ -43,16 +42,16 @@ public class User {
 					System.out.println("================Music====================");
 					break;
 				case 3:
-					
+
 					RandomPlay.play(db);
 					System.out.println("================Music====================");
-					break;	
+					break;
 
 				default:
 					System.out.println("WARNING!!!! \n Enter correct option");
 					break;
 				}
-				//RandomPlay.play(db);
+				// RandomPlay.play(db);
 				System.out.println("================Music====================");
 				break;
 			case 2:
@@ -90,17 +89,17 @@ public class User {
 					break;
 				case "B":
 					ManipulateMusic.editExistingSong(db);
-					break;	
+					break;
 				case "C":
 					ManipulateMusic.deleteExistingSong(db);
-					break;	
+					break;
 
 				default:
 					System.out.println("WARNING!!!! \n Enter correct option");
 					break;
 				}
 				System.out.println("================Music====================");
-                //ManipulateMusic.deleteExistingSong(db);
+				// ManipulateMusic.deleteExistingSong(db);
 				break;
 			case 5:
 				System.out.println("\n'Exit' Sucessfully ");
