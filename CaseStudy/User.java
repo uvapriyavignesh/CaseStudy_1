@@ -31,8 +31,9 @@ public class User {
 				int key1 = s.nextInt();
 				switch (key1) {
 				case 1:
-					RandomPlay.playInOrder(db);
 					System.out.println("================Music====================");
+					RandomPlay.playInOrder(db);
+					
 					break;
 				case 2:
 					System.out.println("Enter the key to search: ");

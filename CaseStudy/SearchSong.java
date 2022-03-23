@@ -9,8 +9,9 @@ public class SearchSong {
 		for (Object Db : l1) {
 			MusicDb musicDb = (MusicDb) Db;
 			String first = musicDb.getTitle().toLowerCase();
-
-			if (first.contains(key)) {
+			String sample =first.substring(0, key.length());
+            //System.out.println(sample);
+			if (sample.contains(key)) {
 				System.out.println(musicDb);
 				found = true;
 				// System.out.println(" Music found succesfully :)");
